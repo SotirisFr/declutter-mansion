@@ -7,6 +7,10 @@ apart from the app icons.
 
 ## Play
 
+**Live:** https://sotirisfr.github.io/declutter-mansion/ (open it on your phone and use *Add to Home Screen* / *Install app*).
+
+Run locally:
+
 ```bash
 npm install
 npm run dev        # http://localhost:5173 (also exposed on your LAN for phone testing)
@@ -19,8 +23,9 @@ npm run build
 npm run preview    # serve dist/ locally
 ```
 
-Deploy `dist/` to any static host (it uses relative paths, so a sub-folder works too). PWAs need HTTPS
-(or localhost) to install and work offline.
+Deploy to GitHub Pages with `npm run deploy`: it builds and force-pushes `dist/` to the `gh-pages` branch,
+using your GitHub CLI login. `dist/` also works on any other static host (it uses relative paths, so a
+sub-folder is fine). PWAs need HTTPS (or localhost) to install and work offline.
 
 ## How to play
 
